@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b0b0b;
+    color: #f5f5f5;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 25px;
+    background-color: #111111;
+    border-bottom: 1px solid #d4af37;
+}
+
+nav a {
+    color: #d4af37;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+header {
+    padding: 50px 20px;
+    border-bottom: 1px solid #d4af37;
+}
+
+h1 {
+    color: #d4af37;
+    font-size: 42px;
+    letter-spacing: 5px;
+}
+
+h2 {
+    color: #641212;
+    font-size: 28px;
+}
+
+p {
+    color: #f5f5f5;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.imagem-destaque {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border: 2px solid #d4af37;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+main {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 35px 25px;
+    margin-bottom: 30px;
+    border: 1px solid #444444;
+    border-radius: 12px;
+    background-color: #111111;
+}
+
+.link-github {
+    display: inline-block;
+    margin-top: 15px;
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.link-github:hover {
+    color: white;
+}
+
+#meuBotao {
+    display: block;
+    margin: 25px auto;
+    padding: 14px 28px;
+    background-color: #d4af37;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#meuBotao:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+#mensagem {
+    color: #d4af37;
+}
+
+footer {
+    padding: 25px;
+    border-top: 1px solid #d4af37;
+    color: #aaaaaa;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    section {
+        padding: 25px 15px;
+    }
+}
+/* Botão de alternar tema */
+#alternarTema {
+    padding: 12px 20px;
+    margin: 20px;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    background-color: #d4af37;
+    color: #111111;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#alternarTema:hover {
+    opacity: 0.8;
+}
+
+/* Tema claro */
+body.tema-claro {
+    background-color: #fff8e7;
+    color: #302719;
+}
+
+body.tema-claro nav {
+    background-color: #f3e8ce;
+}
+
+body.tema-claro nav a {
+    color: #765515;
+}
+
+body.tema-claro header {
+    border-color: #b08d35;
+}
+
+body.tema-claro section {
+    background-color: #ffffff;
+    border-color: #d8c9a5;
+}
+
+body.tema-claro p {
+    color: #302719;
+}
+
+body.tema-claro h1,
+body.tema-claro .link-github {
+    color: #8a681a;
+}
+
+body.tema-claro footer {
+    border-color: #b08d35;
+}
+/* Animação de entrada */
+@keyframes identifier {
+    
+} aparecerSuave {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Anima o título principal */
+header h1 {
+    animation: aparecerSuave 1.2s ease-out;
+}
+
+/* Anima o texto abaixo do título */
+header p {
+    animation: aparecerSuave 1.6s ease-out;
+}
+
+/* Brilho dourado ao passar o mouse */
+header h1:hover {
+    text-shadow: 0 0 15px #d4af37;
+    transition: text-shadow 0.4s ease;
+}
+/* Animação de entrada */
+@keyframes aparecerSuave {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Anima o título principal */
+header h1 {
+    animation: aparecerSuave 1.2s ease-out;
+}
+
+/* Anima o texto abaixo do título */
+header p {
+    animation: aparecerSuave 1.6s ease-out;
+}
+
+/* Brilho dourado ao passar o mouse */
+header h1:hover {
+    text-shadow: 0 0 15px #d4af37;
+    transition: text-shadow 0.4s ease;
+}
